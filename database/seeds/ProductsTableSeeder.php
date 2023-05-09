@@ -17,7 +17,7 @@ class ProductsTableSeeder extends Seeder
         //LAPTOSPS
         for ($i=0; $i < 5; $i++){
             Product::create([
-                'name' => 'laptop' . $i,
+                'name' => 'Jumper 16 Inch Laptop' . $i,
                 'slug' => 'laptop-' . $i,
                 'details' => 'Jumper 16 Inch Laptop, 16GB RAM 512GB SSD, 11th Gen Intel Celeron N5095',
                 'price' => 400,
@@ -31,7 +31,7 @@ class ProductsTableSeeder extends Seeder
 
         for ($i=5; $i < 10; $i++){
             Product::create([
-                'name' => 'laptop' . $i,
+                'name' => 'MSI Pulse GL66 15.6' . $i,
                 'slug' => 'laptop-' . $i,
                 'details' => 'MSI Pulse GL66 15.6',
                 'price' => 999,
@@ -44,7 +44,7 @@ class ProductsTableSeeder extends Seeder
         }
         for ($i=10; $i < 15; $i++){
             Product::create([
-                'name' => 'laptop' . $i,
+                'name' => 'Jumper 16 Inch Laptop' . $i,
                 'slug' => 'laptop-' . $i,
                 'details' => 'Jumper 16 Inch Laptop, 16GB RAM 512GB SSD, 11th Gen Intel Celeron N5095',
                 'price' => 219,    
@@ -56,7 +56,7 @@ class ProductsTableSeeder extends Seeder
             ]);}
             for ($i=15; $i < 20; $i++){
             Product::create([
-                'name' => 'laptop' . $i,
+                'name' => 'ASUS Chromebook Vibe C55 Flip' . $i,
                 'slug' => 'laptop-' . $i,
                 'details' => 'ASUS Chromebook Vibe C55 Flip, Cloud Gaming Laptop, 15.6',
                 'price' => 700,
@@ -65,7 +65,8 @@ class ProductsTableSeeder extends Seeder
                 'images' => '["products/dummy/Phones/Phone1/1.webp", "products/dummy/Phones/Phone1/2.webp", "products/dummy/Phones/Phone1/3.webp"]',
                 'description' => 'ASUS Chromebook Vibe C55 Flip, Cloud Gaming Laptop, 15.6" Full HD 144 Hz Touch Display, Intel® Core™ i5-1135G7 Processor, 512GB SSD, 16GB RAM, ChromeOS, Mineral Gray, CX5501FEA-AS562T.',
                 'quantity' => 10
-            ]);}
+            ]);}//con error
+
 
             //final de laptos
 
@@ -73,13 +74,13 @@ class ProductsTableSeeder extends Seeder
       //iphone
         for ($i=0; $i < 10; $i++) {
             Product::create([
-                'name' => 'Phone' . $i,
+                'name' => 'Apple iPhone 14 Pro Max 256GB Plateado' . $i,
                 'slug' => 'phone-' . $i,
                 'details' => 'Apple iPhone 14 Pro Max 256GB Plateado',
                 'price' => rand(1000, 1200),
                 'category_id' => 3,
-                'image' => 'products/dummy/Phones/phone2/portada.webp',
-                'images' => '["products/dummy/Phones/Phone2/1.webp", "products/dummy/Phones/Phone1/2.webp", "products/dummy/Phones/Phone1/3.webp"]',
+                'image' => 'products/dummy/Phones/iphone2/portada.jpg',
+                'images' => '["products/dummy/Phones/iphone2/1.jpg", "products/dummy/Phones/iphone2/2.jpg", "products/dummy/Phones/iphone2/3.jpg"]',
                 'description' => 'Deslumbra con el iPhone 14 Pro Max de 256GB Plateado, 
                 Cuenta con procesador Chip A16 Bionic con Dynamic Island, Pantalla OLED Super 
                 Retina XDR 6.7 pulgadas y sistema de cámara dual de 48 Mpx.',
@@ -88,13 +89,13 @@ class ProductsTableSeeder extends Seeder
         }
         for ($i=10; $i < 20; $i++) {
             Product::create([
-                'name' => 'Phone' . $i,
+                'name' => 'Iphone 14' . $i,
                 'slug' => 'phone-' . $i,
                 'details' => 'Samsung s23 128Gb',
                 'price' => rand(1000, 1200),
                 'category_id' => 3,
-                'image' => 'products/dummy/Phones/phone1/portada.webp',
-                'images' => '["products/dummy/Phones/Phone1/1.webp", "products/dummy/Phones/Phone1/2.webp", "products/dummy/Phones/Phone1/3.webp"]',
+                'image' => 'products/dummy/Phones/phone1/portada.jpg',
+                'images' => '["products/dummy/Phones/Phone1/1.jpg", "products/dummy/Phones/Phone1/2.jpg", "products/dummy/Phones/Phone1/3.jpg"]',
                 'description' => 'Pantalla: Dynamic AMOLED 2X touchscreen capacitivo, 16M colores 6.8", 1440 x 3088 pixels
                 Refresco de pantalla: 120Hz
                 HDR+: Si
@@ -109,13 +110,13 @@ class ProductsTableSeeder extends Seeder
     
         for ($i=0; $i < 10; $i++) {
             Product::create([
-                'name' => 'Desktop' . $i,
+                'name' => 'SkyTech Shadow 3.0 Gaming Computer' . $i,
                 'slug' => 'desktop-' . $i,
                 'details' => 'SkyTech Shadow 3.0 Gaming Computer PC Desktop - Ryzen 7 3700X 8-Core 3.6GHz, RTX 3060 12GB, 1TB SSD, 16GB DDR4 3200, RGB Fans, AC WiFi, 600W Gold PSU, Windows 11 Home 64-bit, Black',
                 'price' => rand(1000, 9999),
                 'category_id' => 2,
-                'image' => 'products/dummy/Phones/phone1/Desktop/desktop1/portada.jpg',
-                'images' => '["products/dummy/Phones/phone1/Desktop/desktop1/1.jpg", "products/dummy/Phones/phone1/Desktop/desktop1/2.jpg",products/dummy/Phones/phone1/Desktop/desktop1/3.jpg]',
+                'image' => 'products/dummy/Phones/Desktop/desktop1/portada.jpg',
+                'images' => '["products/dummy/Phones/Desktop/desktop1/1.jpg", "products/dummy/Phones/Desktop/desktop1/2.jpg",products/dummy/Phones/Desktop/desktop1/3.jpg]',
                 'description' => '✔ AMD Ryzen 7 3700X 8-Core 3.6 GHz (4.4 GHz Turbo) CPU Processor | 1TB SSD |
                 ✔ GeForce RTX 3060 GDDR6 12GB Graphics Card (Brand May Varies) | 16GB DDR4 3200MHz Gaming Memory | Windows 11 Home 64-bit
                 ✔ 802.11AC | No Bloatware | Graphic output options include 1 x HDMI, and 1 x Display Port Guranteed, Additional Ports may vary | USB Ports Including 2.0, 3.0, and 3.2 Gen1 Ports | HD Audio and Mic | Free Gaming Keyboard and Mouse
@@ -126,13 +127,13 @@ class ProductsTableSeeder extends Seeder
         }
         for ($i=10; $i < 20; $i++) {
             Product::create([
-                'name' => 'Desktop' . $i,
+                'name' => 'Acer Aspire TC-1760-UA92 Desktop' . $i,
                 'slug' => 'desktop-' . $i,
                 'details' => 'Acer Aspire TC-1760-UA92 Desktop | 12th Gen Intel Core i5-12400 6-Core Processor | 12GB 3200MHz DDR4 | 512GB NVMe M.2 SSD | 8X DVD | Intel Wireless Wi-Fi 6 AX201 | Bluetooth 5.2 | Windows 11 Home',
                 'price' => rand(1000, 9999),
                 'category_id' => 2,
-                'image' => 'products/dummy/Phones/phone1/Desktop/desktop2/portada.jpg',
-                'images' => '["products/dummy/Phones/phone1/Desktop/desktop2/1.jpg", "products/dummy/Phones/phone1/Desktop/desktop2/2.jpg", "products/dummy/Phones/phone1/Desktop/desktop2/3.jpg"]',
+                'image' => 'products/dummy/Phones/Desktop/desktop2/portada.jpg',
+                'images' => '["products/dummy/Phones/Desktop/desktop2/1.jpg", "products/dummy/Phones/Desktop/desktop2/2.jpg", "products/dummy/Phones/Desktop/desktop2/3.jpg"]',
                 'description' => 'ROBUST COMPUTING HUB: Tackle any task—from basic computing to multimedia entertainment—every time you power up this beastly machine. Easily expandable and driven by a 12th Gen Intel Core i5 processor, it has the speed, power and storage to do more—everyday.
                 12th Generation Intel Core i5-12400 6-Core Processor (Up to 4.4GHz) | Intel UHD Graphics 730
                 12GB 3200MHz DDR4 Memory | 512GB M.2 2280 NVMe SSD | 8X DVD-Writer Double-Layer Drive (DVD-RW)
@@ -148,7 +149,7 @@ class ProductsTableSeeder extends Seeder
 
         for ($i=0; $i < 10; $i++) {
             Product::create([
-                'name' => 'Tablet' . $i,
+                'name' => 'SAMSUNG Galaxy Tab A8' . $i,
                 'slug' => 'tablet-' . $i,
                 'details' => 'SAMSUNG Galaxy Tab A8 10.5” 32GB Android Tablet w/ LCD Screen, Long Lasting Battery, Kids Content, Smart Switch, Expandable Memory, US Version, Silver, Amazon Exclusive',
                 'price' => rand(400, 500),
@@ -168,7 +169,7 @@ class ProductsTableSeeder extends Seeder
         
         for ($i=11; $i < 20; $i++) {
             Product::create([
-                'name' => 'Tablet' . $i,
+                'name' => 'Apple iPad' . $i,
                 'slug' => 'tablet-' . $i,
                 'details' => 'Apple iPad (9th Generation): with A13 Bionic chip, 10.2-inch Retina Display, 64GB, Wi-Fi, 12MP front/8MP Back Camera, Touch ID, All-Day Battery Life – Silver',
                 'price' => rand(200, 300),
