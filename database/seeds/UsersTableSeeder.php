@@ -38,15 +38,15 @@ class UsersTableSeeder extends Seeder
 
             ]);
         }
-        User::create([
+        // User::create([
             
-            'name'           => 'Admin1',
-            'email'          => 'admin1@admin.com',
-            'password'       => '12345678',
-            'remember_token' => Str::random(60),
-            'role_id'        => $role->id,
+        //     'name'           => 'Admin1',
+        //     'email'          => 'admin1@admin.com',
+        //     'password'       => '12345678',
+        //     'remember_token' => Str::random(60),
+        //     'role_id'        => $role->id,
 
 
-        ]);
+        // ]);
     }
 }
